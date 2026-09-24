@@ -1,0 +1,3 @@
+<?php
+namespace App\Controllers; use App\Helpers\{View,Csrf,Flash}; use App\Middlewares\AdminMiddleware; use App\Repositories\CategoryRepository;
+final class AdminCategoryController {public function index():void{AdminMiddleware::handle();View::render('admin/categories',['title'=>'Categorías','categories'=>(new CategoryRepository())->all()]);}public function store():void{AdminMiddleware::handle();Csrf::validate();$n=trim($_POST['name']??'');if($n!=='')(new CategoryRepository())->create($n);Flash::set('success','Categoría guardada.');header('Location: /admin/categories');}public function toggle(string $id):void{AdminMiddleware::handle();Csrf::validate();(new CategoryRepository())->toggle((int)$id);header('Location: /admin/categories');}}

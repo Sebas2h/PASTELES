@@ -1,0 +1,6 @@
+{
+  "name": "pasteleria/dulce-naranja",
+  "description": "Aplicación web multicapa para pastelería",
+  "require": {"php": ">=8.1", "ext-pdo": "*", "ext-fileinfo": "*"},
+  "autoload": {"psr-4": {"App\\": "src/"}}
+}

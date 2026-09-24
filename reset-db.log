@@ -1,0 +1,265 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260903182631
+Nombre de usuario: DESKTOP-3LT3NM6\Sebas2hVR
+Usuario RunAs: DESKTOP-3LT3NM6\Sebas2hVR
+Nombre de la configuración: 
+Máquina: DESKTOP-3LT3NM6 (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\Resetear-BaseDatos-FIX.ps1 
+Id. de proceso: 1932
+PSVersion: 5.1.26100.9278
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9278
+BuildVersion: 10.0.26100.9278
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[i]  Registro de ejecucion: C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+[i]  Base objetivo : pasteleria_db
+[i]  Servidor      : 127.0.0.1:3310
+[i]  Usuario       : root
+
+[OK] Cliente encontrado: C:\Program Files\MariaDB 12.3\bin\mysql.exe
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  No pude conectar con MariaDB en el primer intento.
+[OK] Servicio activo: ArteCueroMariaDB
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  La clave de DB_PASSWORD puede estar vacia o ser incorrecta.
+Escribe la contraseña de MariaDB para el usuario indicado.
+Si root NO tiene contraseña, simplemente presiona ENTER.
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+PS>ErrorTerminación(): "No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env."
+
+========================================================
+                    ERROR
+========================================================
+
+[X]  El reset NO pudo terminar.
+
+No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env.
+
+El detalle tambien queda guardado en:
+  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+
+[!]  La ventana permanecera abierta para que puedas leer el error.
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260903183018
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260903183111
+Nombre de usuario: DESKTOP-3LT3NM6\Sebas2hVR
+Usuario RunAs: DESKTOP-3LT3NM6\Sebas2hVR
+Nombre de la configuración: 
+Máquina: DESKTOP-3LT3NM6 (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\Resetear-BaseDatos-FIX.ps1 
+Id. de proceso: 25784
+PSVersion: 5.1.26100.9278
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9278
+BuildVersion: 10.0.26100.9278
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[i]  Registro de ejecucion: C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+[i]  Base objetivo : pasteleria_db
+[i]  Servidor      : 127.0.0.1:3310
+[i]  Usuario       : root
+
+[OK] Cliente encontrado: C:\Program Files\MariaDB 12.3\bin\mysql.exe
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  No pude conectar con MariaDB en el primer intento.
+[OK] Servicio activo: ArteCueroMariaDB
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  La clave de DB_PASSWORD puede estar vacia o ser incorrecta.
+Escribe la contraseña de MariaDB para el usuario indicado.
+Si root NO tiene contraseña, simplemente presiona ENTER.
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+PS>ErrorTerminación(): "No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env."
+
+========================================================
+                    ERROR
+========================================================
+
+[X]  El reset NO pudo terminar.
+
+No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env.
+
+El detalle tambien queda guardado en:
+  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+
+[!]  La ventana permanecera abierta para que puedas leer el error.
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260903183120
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260903183323
+Nombre de usuario: DESKTOP-3LT3NM6\Sebas2hVR
+Usuario RunAs: DESKTOP-3LT3NM6\Sebas2hVR
+Nombre de la configuración: 
+Máquina: DESKTOP-3LT3NM6 (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\Resetear-BaseDatos-FIX.ps1 
+Id. de proceso: 14776
+PSVersion: 5.1.26100.9278
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9278
+BuildVersion: 10.0.26100.9278
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[i]  Registro de ejecucion: C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+[i]  Base objetivo : pasteleria_db
+[i]  Servidor      : 127.0.0.1:3310
+[i]  Usuario       : root
+
+[OK] Cliente encontrado: C:\Program Files\MariaDB 12.3\bin\mysql.exe
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  No pude conectar con MariaDB en el primer intento.
+[OK] Servicio activo: ArteCueroMariaDB
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  La clave de DB_PASSWORD puede estar vacia o ser incorrecta.
+Escribe la contraseña de MariaDB para el usuario indicado.
+Si root NO tiene contraseña, simplemente presiona ENTER.
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+PS>ErrorTerminación(): "No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env."
+
+========================================================
+                    ERROR
+========================================================
+
+[X]  El reset NO pudo terminar.
+
+No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env.
+
+El detalle tambien queda guardado en:
+  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+
+[!]  La ventana permanecera abierta para que puedas leer el error.
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260903183333
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260903183407
+Nombre de usuario: DESKTOP-3LT3NM6\Sebas2hVR
+Usuario RunAs: DESKTOP-3LT3NM6\Sebas2hVR
+Nombre de la configuración: 
+Máquina: DESKTOP-3LT3NM6 (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\Resetear-BaseDatos-FIX.ps1 
+Id. de proceso: 35364
+PSVersion: 5.1.26100.9278
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9278
+BuildVersion: 10.0.26100.9278
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[i]  Registro de ejecucion: C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+[i]  Base objetivo : pasteleria_db
+[i]  Servidor      : 127.0.0.1:3310
+[i]  Usuario       : root
+
+[OK] Cliente encontrado: C:\Program Files\MariaDB 12.3\bin\mysql.exe
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  No pude conectar con MariaDB en el primer intento.
+[OK] Servicio activo: ArteCueroMariaDB
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  La clave de DB_PASSWORD puede estar vacia o ser incorrecta.
+Escribe la contraseña de MariaDB para el usuario indicado.
+Si root NO tiene contraseña, simplemente presiona ENTER.
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+PS>ErrorTerminación(): "No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env."
+
+========================================================
+                    ERROR
+========================================================
+
+[X]  El reset NO pudo terminar.
+
+No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env.
+
+El detalle tambien queda guardado en:
+  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+
+[!]  La ventana permanecera abierta para que puedas leer el error.
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260903183414
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260903183503
+Nombre de usuario: DESKTOP-3LT3NM6\Sebas2hVR
+Usuario RunAs: DESKTOP-3LT3NM6\Sebas2hVR
+Nombre de la configuración: 
+Máquina: DESKTOP-3LT3NM6 (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\Resetear-BaseDatos-FIX.ps1 
+Id. de proceso: 25512
+PSVersion: 5.1.26100.9278
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9278
+BuildVersion: 10.0.26100.9278
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[i]  Registro de ejecucion: C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+[i]  Base objetivo : pasteleria_db
+[i]  Servidor      : 127.0.0.1:3310
+[i]  Usuario       : root
+
+[OK] Cliente encontrado: C:\Program Files\MariaDB 12.3\bin\mysql.exe
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  No pude conectar con MariaDB en el primer intento.
+[OK] Servicio activo: ArteCueroMariaDB
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+[!]  La clave de DB_PASSWORD puede estar vacia o ser incorrecta.
+Escribe la contraseña de MariaDB para el usuario indicado.
+Si root NO tiene contraseña, simplemente presiona ENTER.
+PS>ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+>> ErrorTerminación(mysql.exe): "Se detuvo el comando en ejecución porque la variable de preferencia "ErrorActionPreference" o un parámetro común se han establecido en Stop: WARNING: option --ssl-verify-server-cert is disabled, because of an insecure passwordless login."
+PS>ErrorTerminación(): "No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env."
+
+========================================================
+                    ERROR
+========================================================
+
+[X]  El reset NO pudo terminar.
+
+No fue posible conectar a MariaDB. Revisa DB_HOST, DB_PORT, DB_USER y DB_PASSWORD en .env.
+
+El detalle tambien queda guardado en:
+  C:\Users\Sebas2hVR\Desktop\AplicacionPasteles\reset-db.log
+
+[!]  La ventana permanecera abierta para que puedas leer el error.
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260903183511
+**********************

@@ -1,0 +1,28 @@
+/* Politica global: todo texto editable normal se muestra en mayusculas. */
+input:not([type]),
+input[type="text"],
+input[type="search"],
+input[type="tel"],
+textarea,
+[contenteditable="true"] {
+    text-transform: uppercase;
+}
+
+input[data-preserve-case="true"],
+input[data-allow-lowercase="true"],
+textarea[data-preserve-case="true"],
+textarea[data-allow-lowercase="true"],
+[data-contenteditable-preserve-case="true"],
+[data-preserve-case="true"],
+[data-allow-lowercase="true"] {
+    text-transform: none;
+}
+
+/* Si el logotipo anterior dependia solo de un emoji, evita dejar el circulo vacio. */
+.brand-mark:empty::before {
+    content: "DN";
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .04em;
+}

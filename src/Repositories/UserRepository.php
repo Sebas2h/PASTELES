@@ -1,0 +1,16 @@
+<?php
+namespace App\Repositories; use App\Config\Database;
+final class UserRepository {
+    public function findByUsername(string $u):?array{$s=Database::connection()->prepare('SELECT u.*,r.name role FROM users u JOIN roles r ON r.id=u.role_id WHERE u.username=? LIMIT 1');$s->execute([$u]);return $s->fetch()?:null;}
+    public function findByGoogleSub(string $sub):?array{$s=Database::connection()->prepare('SELECT u.*,r.name role FROM users u JOIN roles r ON r.id=u.role_id WHERE u.google_sub=? LIMIT 1');$s->execute([$sub]);return $s->fetch()?:null;}
+    public function findByEmail(string $email):?array{$s=Database::connection()->prepare('SELECT u.*,r.name role FROM users u JOIN roles r ON r.id=u.role_id WHERE u.email=? LIMIT 1');$s->execute([$email]);return $s->fetch()?:null;}
+    public function existsUsernameOrEmail(string $u,string $e):bool{$s=Database::connection()->prepare('SELECT COUNT(*) FROM users WHERE username=? OR email=?');$s->execute([$u,$e]);return (int)$s->fetchColumn()>0;}
+    public function emailUsedByAnother(string $email,int $userId):bool{$s=Database::connection()->prepare('SELECT COUNT(*) FROM users WHERE email=? AND id<>?');$s->execute([$email,$userId]);return (int)$s->fetchColumn()>0;}
+    public function roleId(string $name):int{$s=Database::connection()->prepare('SELECT id FROM roles WHERE name=? LIMIT 1');$s->execute([$name]);return (int)$s->fetchColumn();}
+    public function create(array $d,string $role):int{$s=Database::connection()->prepare("INSERT INTO users(role_id,first_name,second_name,last_name,second_last_name,username,email,password_hash,status) VALUES(?,?,?,?,?,?,?,?,'ACTIVE')");$s->execute([$this->roleId($role),$d['first_name'],$d['second_name']?:null,$d['last_name'],$d['second_last_name'],$d['username'],$d['email'],password_hash($d['password'],PASSWORD_DEFAULT)]);return (int)Database::connection()->lastInsertId();}
+    public function createGoogle(array $profile):int{$pdo=Database::connection();$base=preg_replace('/[^a-z0-9_.-]/','',strtolower(explode('@',$profile['email'])[0]))?:'comprador';$username=$base;$n=1;while($this->findByUsername($username)){$username=$base.$n++;}$s=$pdo->prepare("INSERT INTO users(role_id,first_name,second_name,last_name,second_last_name,username,email,google_sub,password_hash,status) VALUES(?,?,?,?,?,?,?,?,?,'ACTIVE')");$s->execute([$this->roleId('COMPRADOR'),$profile['given_name']?:'Usuario',null,$profile['family_name']?:'Google','',$username,$profile['email'],$profile['sub'],password_hash(bin2hex(random_bytes(32)),PASSWORD_DEFAULT)]);return (int)$pdo->lastInsertId();}
+    public function updateProfile(int $id,array $d):void{$s=Database::connection()->prepare('UPDATE users SET first_name=?,last_name=? WHERE id=?');$s->execute([$d['first_name'],$d['last_name'],$id]);}
+    public function updateFirstName(int $id,string $value):void{$s=Database::connection()->prepare('UPDATE users SET first_name=? WHERE id=?');$s->execute([$value,$id]);}
+    public function updateLastName(int $id,string $value):void{$s=Database::connection()->prepare('UPDATE users SET last_name=? WHERE id=?');$s->execute([$value,$id]);}
+    public function updateEmail(int $id,string $email):void{$s=Database::connection()->prepare('UPDATE users SET email=? WHERE id=?');$s->execute([$email,$id]);}
+}
