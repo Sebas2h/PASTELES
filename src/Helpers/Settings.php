@@ -10,5 +10,5 @@ final class Settings {
         $s=Database::connection()->prepare('INSERT INTO system_settings(setting_key,setting_value) VALUES(?,?) ON DUPLICATE KEY UPDATE setting_value=VALUES(setting_value)');
         $s->execute([$key,$value]);
     }
-    public static function pointsPerUsd():float { return max(0,(float)self::get('points_per_usd','1')); }
+    public static function pointsPerUsd():float { return max(0,(float)self::get('points_per_usd','10')); }
 }

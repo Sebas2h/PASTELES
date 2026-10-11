@@ -34,11 +34,12 @@
 
     <section class="panel">
         <h2>Mis pedidos</h2>
+        <p><a href="/cart">Ver compras y carrito →</a></p>
         <?php if(!$orders):?><p class="muted">Todavía no tienes pedidos.</p><?php endif;?>
         <?php foreach($orders as $o):?>
             <div class="orderrow">
                 <span><b>#<?=$o['id']?></b><small><?=date('d/m/Y',strtotime($o['created_at']))?></small></span>
-                <span class="status"><?=View::e($o['status_name'])?></span>
+                <span class="status"><?=View::e($o['customer_status'])?></span>
                 <strong>$<?=number_format($o['total'],2)?></strong>
             </div>
         <?php endforeach;?>

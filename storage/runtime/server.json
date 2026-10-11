@@ -1,10 +1,10 @@
 {
-  "projectRoot": "C:\\Users\\Sebas2hVR\\Desktop\\AplicacionPasteles",
-  "nodePid": 36376,
-  "phpPid": 15812,
+  "projectRoot": "C:\\Users\\HOME\\PASTELES",
+  "nodePid": 30120,
+  "phpPid": 29024,
   "host": "127.0.0.1",
   "publicPort": 3000,
-  "phpPort": 8081,
+  "phpPort": 8091,
   "url": "http://127.0.0.1:3000",
-  "startedAt": "2026-09-22T21:05:36.855Z"
+  "startedAt": "2026-10-11T02:52:58.561Z"
 }

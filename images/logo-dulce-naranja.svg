@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 96" role="img" aria-labelledby="title">
+  <title id="title">Dulce Naranja</title>
+  <g transform="translate(48 48)">
+    <circle r="39" fill="#f4a35c"/>
+    <circle r="31" fill="#fff0d8"/>
+    <circle r="26" fill="#f28a43"/>
+    <circle r="5" fill="#fff0d8"/>
+    <g fill="#fff0d8">
+      <path d="M-2-6h4v-17h-4zM-2 6h4v17h-4zM6-2h17v4H6zM-23-2h17v4h-17z"/>
+      <path d="m4-5 12-12 3 3L7-2zm-8 10-12 12-3-3L-7 2zm0-10 3 3-12 12-3-3zm8 10 3-3 12 12-3 3z"/>
+    </g>
+    <path d="M6-34c12-13 25-11 30-8-4 11-14 18-28 14" fill="#64835a"/>
+    <path d="M9-31 28-40" fill="none" stroke="#fff0d8" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+  <text x="103" y="60" fill="#4b3026" font-family="Georgia, 'Times New Roman', serif" font-size="43" font-weight="700" letter-spacing="-1.8">Dulce <tspan fill="#dc6b34">Naranja</tspan></text>
+  <path d="M106 73h198" fill="none" stroke="#e8c8b2" stroke-linecap="round" stroke-width="1.5"/>
+  <text x="107" y="88" fill="#987563" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="3.1">PASTELERÍA ARTESANAL</text>
+</svg>

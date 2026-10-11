@@ -13,7 +13,7 @@ $r->add('GET','/login',[AuthController::class,'loginForm']);$r->add('POST','/log
 $r->add('GET','/auth/google',[AuthController::class,'googleStart']);$r->add('GET','/auth/google/callback',[AuthController::class,'googleCallback']);
 $r->add('GET','/cart',[CartController::class,'show']);$r->add('POST','/cart/add',[CartController::class,'add']);$r->add('POST','/cart/update',[CartController::class,'update']);$r->add('POST','/checkout',[CartController::class,'checkout']);
 $r->add('GET','/profile',[ProfileController::class,'show']);$r->add('POST','/profile/update',[ProfileController::class,'updateProfile']);
-$r->add('GET','/tienda',[StoreController::class,'index']);$r->add('POST','/tienda/canjear/{id}',[StoreController::class,'redeem']);
+$r->add('GET','/tienda',[StoreController::class,'index']);$r->add('POST','/tienda/canjear/{id}',[StoreController::class,'redeem']);$r->add('POST','/tienda/ruleta',[StoreController::class,'spin']);
 $r->add('POST','/profile/email/request-current',[ProfileController::class,'requestCurrentEmailCode']);$r->add('GET','/profile/email/verify-current',[ProfileController::class,'currentEmailCodeForm']);$r->add('POST','/profile/email/verify-current',[ProfileController::class,'verifyCurrentEmailCode']);
 $r->add('GET','/profile/email/new',[ProfileController::class,'newEmailForm']);$r->add('POST','/profile/email/request-new',[ProfileController::class,'requestNewEmailCode']);$r->add('GET','/profile/email/verify-new',[ProfileController::class,'newEmailCodeForm']);$r->add('POST','/profile/email/verify-new',[ProfileController::class,'verifyNewEmailCode']);
 $r->add('GET','/admin',[AdminController::class,'dashboard']);$r->add('GET','/admin/products',[AdminProductController::class,'index']);$r->add('GET','/admin/products/create',[AdminProductController::class,'create']);$r->add('POST','/admin/products',[AdminProductController::class,'store']);$r->add('GET','/admin/products/{id}/edit',[AdminProductController::class,'edit']);$r->add('POST','/admin/products/{id}/update',[AdminProductController::class,'update']);$r->add('POST','/admin/products/{id}/delete',[AdminProductController::class,'delete']);
@@ -23,4 +23,6 @@ $r->add('GET','/admin/orders',[AdminOrderController::class,'index']);$r->add('PO
 $r->add('GET','/admin/settings',[AdminSettingsController::class,'index']);$r->add('POST','/admin/settings',[AdminSettingsController::class,'save']);
 $r->add('GET','/admin/reports',[AdminReportController::class,'index']);
 
+$r->add('POST','/admin/rewards/ruleta',[AdminRewardController::class,'saveWheel']);
+$r->add('POST','/tienda/ruleta/aceptar',[StoreController::class,'acceptSpin']);
 $r->dispatch($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI']);

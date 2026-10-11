@@ -2,7 +2,7 @@
 namespace App\Controllers;
 
 use App\Config\Database;
-use App\Helpers\{Auth,Csrf,Flash,View};
+use App\Helpers\{Auth,Csrf,Flash,View,OrderWorkflow};
 use App\Middlewares\AuthMiddleware;
 use App\Repositories\UserRepository;
 use App\Services\EmailChangeService;
@@ -11,10 +11,10 @@ final class ProfileController
 {
     public function show():void
     {
-        AuthMiddleware::handle();$u=Auth::user();$pdo=Database::connection();
+        AuthMiddleware::handle();$u=Auth::user();$pdo=Database::connection();OrderWorkflow::ensureSchema($pdo);
         $s=$pdo->prepare('SELECT pm.*,o.id order_no FROM point_movements pm LEFT JOIN orders o ON o.id=pm.order_id WHERE pm.user_id=? ORDER BY pm.created_at DESC LIMIT 50');$s->execute([$u['id']]);$mov=$s->fetchAll();
-        $s=$pdo->prepare('SELECT o.*,os.name status_name FROM orders o JOIN order_statuses os ON os.id=o.status_id WHERE o.user_id=? ORDER BY o.created_at DESC LIMIT 20');$s->execute([$u['id']]);
-        View::render('cliente/profile',['title'=>'Mi cuenta','movements'=>$mov,'orders'=>$s->fetchAll()]);
+        $s=$pdo->prepare('SELECT o.*,os.name status_name FROM orders o JOIN order_statuses os ON os.id=o.status_id WHERE o.user_id=? ORDER BY o.created_at DESC LIMIT 20');$s->execute([$u['id']]);$orders=$s->fetchAll();foreach($orders as &$order)$order['customer_status']=OrderWorkflow::customerStatus($order);unset($order);
+        View::render('cliente/profile',['title'=>'Mi cuenta','movements'=>$mov,'orders'=>$orders]);
     }
 
     public function updateProfile():void
